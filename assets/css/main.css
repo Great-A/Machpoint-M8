@@ -1,0 +1,102 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+div {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Soleil';
+}
+body #page {
+  position: relative;
+  overflow: hidden;
+}
+.button {
+  border-radius: 5px;
+  padding: 18px 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.button:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.btn-red {
+  background-color: #FD4850;
+}
+.btn-red:hover {
+  border: 2px solid #FD4850;
+  background: transparent;
+  color: #FD4850;
+  padding: 16px 19px;
+}
+.btn-transparent {
+  background: transparent;
+  border: 2px solid #FFFFFF;
+  transition: 1s;
+}
+.btn-transparent:hover {
+  background-color: #FFFFFF;
+  border: none;
+  color: transparent;
+}
+.header-container {
+  position: fixed;
+  width: 100%;
+  padding: 11px 0;
+  color: #234B91;
+}
+.header-container .header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.header-container .header-wrapper .logo-menu-wrapp {
+  display: flex;
+}
+.header-container .header-wrapper .logo-menu-wrapp a {
+  color: #234B91;
+}
+.header-container .header-wrapper .logo-menu-wrapp .logo-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.header-container .header-wrapper .header-menu {
+  display: flex;
+}
+.header-container .header-wrapper .header-menu .menu-header-menu {
+  display: flex;
+}
+.header-container .header-wrapper .header-menu .menu-header-menu .menu-item {
+  padding-right: 60px;
+}
+.header-container .header-wrapper .header-menu .menu-header-menu .menu-item a {
+  color: #234B91;
+}
+.header-container .header-wrapper .header-menu .menu-header-menu .button-wrapper-header {
+  color: #FFFFFF;
+}

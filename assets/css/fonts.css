@@ -1,22 +1,22 @@
 @font-face {
-    font-family: 'Soleil Bk';
-    src: url('Soleil-Book.eot');
-    src: url('Soleil-Book.eot?#iefix') format('embedded-opentype'),
-        url('Soleil-Book.woff') format('woff'),
-        url('Soleil-Book.ttf') format('truetype'),
-        url('Soleil-Book.svg#Soleil-Book') format('svg');
+    font-family: 'Soleil';
+    src: url('../fonts/Soleil-Book.eot');
+    src: url('../fonts/Soleil-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Soleil-Book.woff') format('woff'),
+        url('../fonts/Soleil-Book.ttf') format('truetype'),
+        url('../fonts/Soleil-Book.svg#Soleil-Book') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Soleil Lt';
-    src: url('Soleil-Light.eot');
-    src: url('Soleil-Light.eot?#iefix') format('embedded-opentype'),
-        url('Soleil-Light.woff') format('woff'),
-        url('Soleil-Light.ttf') format('truetype'),
-        url('Soleil-Light.svg#Soleil-Light') format('svg');
+    font-family: 'Soleil';
+    src: url('../fonts/Soleil-Light.eot');
+    src: url('../fonts/Soleil-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Soleil-Light.woff') format('woff'),
+        url('../fonts/Soleil-Light.ttf') format('truetype'),
+        url('../fonts/Soleil-Light.svg#Soleil-Light') format('svg');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -24,11 +24,11 @@
 
 @font-face {
     font-family: 'Soleil';
-    src: url('Soleil-Bold.eot');
-    src: url('Soleil-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Soleil-Bold.woff') format('woff'),
-        url('Soleil-Bold.ttf') format('truetype'),
-        url('Soleil-Bold.svg#Soleil-Bold') format('svg');
+    src: url('../fonts/Soleil-Bold.eot');
+    src: url('../fonts/Soleil-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Soleil-Bold.woff') format('woff'),
+        url('../fonts/Soleil-Bold.ttf') format('truetype'),
+        url('../fonts/Soleil-Bold.svg#Soleil-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -36,11 +36,11 @@
 
 @font-face {
     font-family: 'Soleil';
-    src: url('Soleil-Regular.eot');
-    src: url('Soleil-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Soleil-Regular.woff') format('woff'),
-        url('Soleil-Regular.ttf') format('truetype'),
-        url('Soleil-Regular.svg#Soleil-Regular') format('svg');
+    src: url('../fonts/Soleil-Regular.eot');
+    src: url('../fonts/Soleil-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Soleil-Regular.woff') format('woff'),
+        url('../fonts/Soleil-Regular.ttf') format('truetype'),
+        url('../fonts/Soleil-Regular.svg#Soleil-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
