@@ -1,7 +1,115 @@
-@media all and (max-width: 991px) {
+@media (min-width: 1850px) {
+    .container-big {
+        padding: 0;
+    }
+
+    #section-1 {
+        .sec1-info-wrapper {
+            padding-bottom: 140px;
+        }
+
+        .wrapper1 {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .img-wrapp {
+                z-index: 1;
+                width: 600px;
+
+                img {
+                    margin-left: 90px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+
+    #section-1 {
+        text-align: center;
+        padding: 50px 0;
+
+        .wrapper1 {
+            .img-wrapp {
+                display: block;
+
+                img {
+                    margin: auto;
+
+                }
+            }
+        }
+
+        .sec1-info-wrapper {
+            flex-direction: column;
+        }
+
+        .wrapper2 {
+            padding: 40px 15px 40px;
+
+            &:before {
+                background-image: none;
+            }
+        }
+    }
+
 
 }
 
-@media (max-width: 576px) {
 
+@media all and (max-width: 992px) {
+    .header-container {
+        .header-wrapper {
+            flex-direction: column;
+
+            .logo-menu-wrapp {
+                width: 100%;
+                justify-content: space-between;
+
+                .logo-text {
+                    display: none;
+                }
+            }
+
+            .header-menu {
+                flex-direction: column;
+
+                .menu-header-menu {
+                    flex-direction: column;
+
+                    .menu-item {
+                        padding: 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .top-banner-wrapper {
+        .title-container {
+            padding-bottom: 60px;
+        }
+
+        .col-md {
+            padding: 20px;
+        }
+
+    }
+    #section-1 {
+        .tzone-info-wrapper {
+            padding: 40px 15px;
+            &:before {
+                display: none;
+            }
+        }
+        
+    } 
 }
+
+
+
+@media (max-width: 576px) {}

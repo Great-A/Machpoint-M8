@@ -1,6 +1,10 @@
 @--red: #FD4850;
 @--white: #FFFFFF;
 @--navyBlue: #234B91;
+@--grey: #808080;
+@--grey2: #F8F8FA;
+@--dark: #333333;
+@--dark2: #2C2E38;
 
 h1,
 h2,
@@ -10,6 +14,28 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -0.01em;
+}
+
+.h2-modified {
+    color: @--dark;
+}
+
+h3 {
+    font-weight: bold;
+    color: @--dark2;
+}
+
+.h3-modified {
+    font-size: 36px;
+    line-height: 40px;
+    padding-bottom: 20px;
 }
 
 ul {
@@ -30,10 +56,6 @@ div {
 
 a {
     text-decoration: none;
-
-    &:hover {
-        // 
-    }
 }
 
 body {
@@ -41,18 +63,30 @@ body {
     font-size: 16px;
     font-family: 'Soleil';
 
-    #page {
+    #content {
         position: relative;
         overflow: hidden;
+        margin-top: 100px;
     }
+}
+
+.container-big {
+    min-width: 100%;
+}
+
+.button-wrapper {
+    display: inline-flex;
+    align-items: center;
+    color: @--white;
 }
 
 .button {
     border-radius: 5px;
-    padding: 18px 21px;
+
     color: @--white;
     text-decoration: none;
-    transition: 0.5s;
+    cursor: pointer;
+    line-height: 14px;
 
     &:hover {
         color: @--white;
@@ -62,6 +96,7 @@ body {
 
 .btn-red {
     background-color: @--red;
+    padding: 18px 21px;
 
     &:hover {
         border: 2px solid @--red;
@@ -74,29 +109,36 @@ body {
 .btn-transparent {
     background: transparent;
     border: 2px solid @--white;
-    transition: 1s;
+    padding: 16px 19px;
 
     &:hover {
         background-color: @--white;
         border: none;
-        color: transparent;
+        color: @--navyBlue;
+        padding: 18px 21px;
+
     }
 }
 
 .header-container {
     position: fixed;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 8px #26260038;
     width: 100%;
     padding: 11px 0;
     color: @--navyBlue;
-
+    top: 0;
+    z-index: 999;
 
 
     .header-wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .logo-menu-wrapp {
             display: flex;
+            align-items: center;
 
             a {
                 color: @--navyBlue;
@@ -113,21 +155,184 @@ body {
 
         .header-menu {
             display: flex;
+
             .menu-header-menu {
                 display: flex;
-    
+                align-items: center;
+                font-weight: bold;
+
                 .menu-item {
                     padding-right: 60px;
+
                     a {
                         color: @--navyBlue;
                     }
                 }
-    
-                .button-wrapper-header {
-                    color: @--white;
-                }
-    
+            }
+
+
+        }
+
+        .toggle {
+            display: none;
+            background: none;
+            line-height: 45px;
+            padding: 0 15px 0px 15px;
+            color: @--grey;
+            border: 0;
+            font-size: 2.4em;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:focus-visible,
+            &:focus {
+                outline: none;
             }
         }
+
+        .cross {
+            display: none;
+            background: none;
+            padding: 0 15px 0px 15px;
+            color: @--grey;
+            border: 0;
+            font-size: 4em;
+            line-height: 65px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:focus-visible,
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+.top-banner-wrapper {
+    background-image: url('/assets/img/banner.png');
+    background-size: cover;
+    position: relative;
+    padding: 170px 0 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: @--white;
+
+    .title-container {
+        padding-bottom: 170px;
+
+        .subtitile-banner {
+            font-size: 20px;
+            line-height: 30px;
+            padding-bottom: 20px;
+        }
+
+        .h1-banner {
+            font-weight: bold;
+            font-size: 110px;
+            line-height: 123px;
+            letter-spacing: -0.01em;
+
+        }
+    }
+
+    .benefits {
+        img {
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+
+.bg-grey {
+    background: @--grey2;
+}
+
+#section-1 {
+    padding: 100px 0 140px;
+
+    p {
+        font-size: 18px;
+        line-height: 24px;
+        color: @--dark2;
+    }
+
+    .wrapper1 {
+        .img-wrapp {
+            display: none;
+        }
+    }
+
+    .wrapper2 {
+     
+        padding: 77px 0 70px 100px;
+
+        .block-1 {
+            padding-bottom: 60px;
+        }
+
+        &:before {
+            width: 600px;
+            content: " ";
+            background-image: url('/assets/img/plane-tail.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            left: -522px;
+            top: 90px;
+            height: 360px;
+        }
+    }
+
+    .sec1-info-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .tzone-info-wrapper {
+        display: flex;
+        justify-content: end;
+        padding: 84px 106px 0 0;
+        &:before {
+            width: 322px;
+            content: " ";
+            background-image: url('/assets/img/telephone.png');
+            background-repeat: no-repeat;
+            position: absolute;
+            right: -235px;
+            top: -40px;
+            height: 642px;
+        }
+
+        p {
+            padding-bottom: 60px;
+        }
+    }
+}
+
+#section-2 {
+    .container-big {
+        padding: 0 30px;
+    }
+
+    .col-md {
+        background-repeat: no-repeat;
+    }
+
+    .sec2-item-1{
+        background-image: url('/assets/img/img-1.png');
+        // padding: 211px 0 42px 59px;
+    }
+    .sec2-item-2{
+        background-image: url('/assets/img/img-2.png');
+    }
+    .sec2-item-3{
+        background-image: url('/assets/img/img-3.png');
+    }
+    .sec2-item-4{
+        background-image: url('/assets/img/img-4.png');
     }
 }
