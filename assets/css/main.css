@@ -19,11 +19,15 @@ h2 {
 h3 {
   font-weight: bold;
   color: #2C2E38;
+  font-size: 36px;
 }
 .h3-modified {
-  font-size: 36px;
   line-height: 40px;
   padding-bottom: 20px;
+}
+.h3-blue {
+  color: #3D7FF1;
+  line-height: 45px;
 }
 h4 {
   font-weight: bold;
@@ -267,7 +271,7 @@ body #content {
   background-repeat: no-repeat;
   background-size: contain;
   padding: 0 0 42px 59px;
-  height: 260px;
+  height: 300px;
   display: flex;
   align-items: end;
 }
@@ -285,4 +289,56 @@ body #content {
 }
 #section-2 .sec2-item-4 {
   background-image: url('/assets/img/img-4.png');
+}
+#section-3 .how-work-wrapp {
+  padding-bottom: 100px;
+}
+#section-3 .how-work-wrapp .how-work-col {
+  padding: 0;
+}
+#section-3 .how-work-wrapp .how-work-text {
+  padding: 50px 0;
+}
+#section-3 .how-work-wrapp p {
+  font-size: 22px;
+  line-height: 37px;
+}
+#section-3 .how-work-wrapp img {
+  width: 100%;
+}
+#section-3 .text-right-margin {
+  margin-right: -55px;
+}
+#section-3 .block-1 {
+  padding-bottom: 124px;
+}
+#section-3 .how-work-1,
+#section-3 .how-work-2,
+#section-3 .how-work-3,
+#section-3 .how-work-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#section-3 .how-work-1,
+#section-3 .how-work-3 {
+  align-items: flex-end;
+  padding-right: 160px;
+}
+#section-3 .how-work-2,
+#section-3 .how-work-4 {
+  padding-left: 160px;
+}
+#section-3 .how-work-2 .how-work-item,
+#section-3 .how-work-4 .how-work-item {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+#section-3 .how-work-2 .how-work-item p,
+#section-3 .how-work-4 .how-work-item p,
+#section-3 .how-work-2 .how-work-item .h3-blue,
+#section-3 .how-work-4 .how-work-item .h3-blue {
+  text-align: right;
 }

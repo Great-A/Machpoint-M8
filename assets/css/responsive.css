@@ -41,8 +41,19 @@
   #section-1 .wrapper2:before {
     background-image: none;
   }
+  #section-2 .row .col-md {
+    height: 215px;
+    padding-left: 25px;
+  }
+  #section-3 .how-work-2,
+  #section-3 .how-work-4 {
+    padding-left: 20px;
+  }
 }
 @media all and (max-width: 992px) {
+  .h2-modified {
+    font-size: 50px;
+  }
   .header-container .header-wrapper {
     flex-direction: column;
   }
@@ -74,10 +85,62 @@
   #section-1 .tzone-info-wrapper:before {
     display: none;
   }
+  #section-2 {
+    padding-bottom: 50px;
+  }
   #section-2 .row {
     flex-direction: column;
+    background-position: center;
+    justify-content: center;
   }
   #section-2 .row .col-md {
     padding: 223px 0 42px 59px;
+    margin-bottom: 20px;
+    background-position: center;
+    justify-content: center;
+  }
+  #section-3 {
+    padding-bottom: 50px;
+  }
+  #section-3 .block-1 {
+    padding-bottom: 50px;
+  }
+  #section-3 .how-work-wrapp {
+    padding: 0;
+  }
+  #section-3 .how-work-wrapp .how-work-text {
+    padding: 0;
+  }
+  #section-3 .how-work-wrapp p {
+    font-size: 18px;
+    line-height: 37px;
+  }
+  #section-3 .hww-1,
+  #section-3 .hww-3 {
+    flex-direction: column-reverse;
+  }
+  #section-3 .how-work-1,
+  #section-3 .how-work-2,
+  #section-3 .how-work-3,
+  #section-3 .how-work-4 {
+    align-items: center;
+    padding: 40px 0;
+  }
+  #section-3 .how-work-2 .how-work-item,
+  #section-3 .how-work-4 .how-work-item {
+    padding: 0 15px;
+  }
+  #section-3 .how-work-2 .how-work-item .text-hw,
+  #section-3 .how-work-4 .how-work-item .text-hw {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  #section-3 .how-work-2 .how-work-item p,
+  #section-3 .how-work-4 .how-work-item p,
+  #section-3 .how-work-2 .how-work-item .h3-blue,
+  #section-3 .how-work-4 .how-work-item .h3-blue {
+    text-align: left;
   }
 }
