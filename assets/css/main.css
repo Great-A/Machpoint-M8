@@ -303,8 +303,8 @@ body #content {
   font-size: 22px;
   line-height: 37px;
 }
-#section-3 .how-work-wrapp img {
-  width: 100%;
+#section-3 .how-work-wrapp .how-work-img {
+  max-width: 945px;
 }
 #section-3 .text-right-margin {
   margin-right: -55px;
@@ -341,4 +341,66 @@ body #content {
 #section-3 .how-work-2 .how-work-item .h3-blue,
 #section-3 .how-work-4 .how-work-item .h3-blue {
   text-align: right;
+}
+#section-4 {
+  padding: 110px 0 100px;
+  background-image: url('/assets/img/bg-be-part.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section-4 .be-part-row {
+  display: flex;
+  flex-direction: column;
+}
+#section-4 .be-part-row .be-part-col {
+  margin-bottom: 40px;
+}
+#section-4 .be-part-row .be-part-col .top-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 15px;
+  color: #234B91;
+}
+#section-4 .be-part-row .be-part-col .title-button-block {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #808080;
+}
+#section-4 .be-part-row .be-part-col .title-button-block h3 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 72px;
+  color: #FD4850;
+  padding-top: 30px;
+}
+#section-4 .be-part-row .be-part-col-2 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+footer {
+  padding-top: 100px;
+  color: #234B91;
+}
+footer a {
+  color: #234B91;
+}
+footer .footer-info-block {
+  border-bottom: solid 1px #234b91;
+  padding-bottom: 50px;
+}
+footer .footer-info-block ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-info-block ul li {
+  padding-bottom: 10px;
+}
+footer .copyright-block {
+  display: flex;
+  padding: 25px 0;
+  justify-content: center;
+}
+footer .copyright-block .col-md {
+  padding: 0;
 }
