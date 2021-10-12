@@ -256,6 +256,17 @@ body #content {
 #section-1 .tzone-info-wrapper p {
   padding-bottom: 60px;
 }
+#section-1 .tzone-converter {
+  filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.15));
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  z-index: 2;
+  max-width: 330px;
+  padding: 20px;
+}
+#section-1 .tzone-converter h5 {
+  text-align: center;
+}
 #section-2 {
   padding-bottom: 120px;
   color: #FFFFFF;

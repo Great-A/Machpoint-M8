@@ -53,6 +53,7 @@ h4 {
     color: @--white;
 }
 
+
 ul {
     list-style: none;
     padding: 0;
@@ -77,7 +78,7 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: 'Soleil';
-  
+
     #content {
         position: relative;
         overflow: hidden;
@@ -328,6 +329,18 @@ body {
             padding-bottom: 60px;
         }
     }
+
+    .tzone-converter {
+        filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.15));
+        border-radius: 20px;
+        background-color: @--white;
+        z-index: 2;
+        max-width: 330px;
+        padding: 20px;
+        h5 {
+            text-align: center;
+        }
+    }
 }
 
 #section-2 {
@@ -491,6 +504,7 @@ footer {
     color: @--navyBlue;
     font-size: 14px;
     overflow: hidden;
+
     a {
         color: @--navyBlue;
         opacity: 0.5;
@@ -498,25 +512,30 @@ footer {
 
     .footer-info-block {
         justify-content: space-between;
+
         .footer-rights {
             opacity: 0.3;
+
             .rights-logo {
                 font-size: 12px;
                 padding-top: 15px;
             }
         }
 
-        .logo-footer-wrapp{
+        .logo-footer-wrapp {
             padding-bottom: 30px;
         }
+
         padding-bottom: 50px;
+
         b {
             font-size: 16px;
         }
+
         ul {
             display: flex;
             flex-direction: column;
-            
+
             li {
                 padding-bottom: 10px;
             }
@@ -524,16 +543,19 @@ footer {
     }
 
     .under-footer {
-            border-top: solid 1px @--navyBlue2;
-            padding: 25px 0;
+        border-top: solid 1px @--navyBlue2;
+        padding: 25px 0;
+
         .copyright-block {
             display: flex;
             justify-content: center;
             padding: 0;
             font-size: 12px;
+
             ul {
                 display: flex;
-                li{
+
+                li {
                     padding-right: 65px;
                 }
             }
