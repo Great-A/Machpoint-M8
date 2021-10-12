@@ -103,8 +103,9 @@ body #content {
 }
 .header-container {
   position: fixed;
-  backdrop-filter: blur(5px);
-  box-shadow: 0px 4px 8px #26260038;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 8px #2c2c2c17;
+  background-color: #ffffffc9;
   width: 100%;
   padding: 11px 0;
   color: #234B91;
@@ -365,7 +366,7 @@ body #content {
 #section-4 .be-part-row .be-part-col .title-button-block {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px #808080;
+  border-bottom: solid 1px #ffffff66;
 }
 #section-4 .be-part-row .be-part-col .title-button-block h3 {
   font-weight: bold;
@@ -381,13 +382,29 @@ body #content {
 footer {
   padding-top: 100px;
   color: #234B91;
+  font-size: 14px;
+  overflow: hidden;
 }
 footer a {
   color: #234B91;
+  opacity: 0.5;
 }
 footer .footer-info-block {
-  border-bottom: solid 1px #234b91;
+  justify-content: space-between;
   padding-bottom: 50px;
+}
+footer .footer-info-block .footer-rights {
+  opacity: 0.3;
+}
+footer .footer-info-block .footer-rights .rights-logo {
+  font-size: 12px;
+  padding-top: 15px;
+}
+footer .footer-info-block .logo-footer-wrapp {
+  padding-bottom: 30px;
+}
+footer .footer-info-block b {
+  font-size: 16px;
 }
 footer .footer-info-block ul {
   display: flex;
@@ -396,11 +413,19 @@ footer .footer-info-block ul {
 footer .footer-info-block ul li {
   padding-bottom: 10px;
 }
-footer .copyright-block {
-  display: flex;
+footer .under-footer {
+  border-top: solid 1px #234b911a;
   padding: 25px 0;
-  justify-content: center;
 }
-footer .copyright-block .col-md {
+footer .under-footer .copyright-block {
+  display: flex;
+  justify-content: center;
   padding: 0;
+  font-size: 12px;
+}
+footer .under-footer .copyright-block ul {
+  display: flex;
+}
+footer .under-footer .copyright-block ul li {
+  padding-right: 65px;
 }

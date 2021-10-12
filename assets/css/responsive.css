@@ -150,4 +150,20 @@
     flex-direction: column;
     padding-bottom: 20px;
   }
+  footer {
+    padding-top: 50px;
+  }
+  footer .logo-footer-wrapp img {
+    margin: auto;
+  }
+  footer .footer-rights {
+    text-align: center;
+  }
+  footer .footer-info-block ul {
+    padding-top: 20px;
+    align-items: center;
+  }
+  footer .under-footer .copyright-block ul li {
+    padding-right: 20px;
+  }
 }

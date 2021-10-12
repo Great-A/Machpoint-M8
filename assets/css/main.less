@@ -1,9 +1,9 @@
 @--red: #FD4850;
 @--white: #FFFFFF;
-@--white2: rgb(255, 255, 255, 0.4);
+@--white2: #ffffff66;
 @--blue: #3D7FF1;
 @--navyBlue: #234B91;
-@--navyBlue2: rgb(35, 75, 145, 0.1);
+@--navyBlue2: #234b911a;
 @--grey: #808080;
 @--grey2: #F8F8FA;
 @--dark: #333333;
@@ -77,7 +77,7 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: 'Soleil';
-
+  
     #content {
         position: relative;
         overflow: hidden;
@@ -137,8 +137,9 @@ body {
 
 .header-container {
     position: fixed;
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 4px 8px #26260038;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 8px #2c2c2c17;
+    background-color: #ffffffc9;
     width: 100%;
     padding: 11px 0;
     color: @--navyBlue;
@@ -465,7 +466,7 @@ body {
             .title-button-block {
                 display: flex;
                 justify-content: space-between;
-                border-bottom: solid 1px @--grey;
+                border-bottom: solid 1px @--white2;
 
                 h3 {
                     font-weight: bold;
@@ -488,13 +489,30 @@ body {
 footer {
     padding-top: 100px;
     color: @--navyBlue;
+    font-size: 14px;
+    overflow: hidden;
     a {
         color: @--navyBlue;
+        opacity: 0.5;
     }
 
     .footer-info-block {
-        border-bottom: solid 1px @--navyBlue2;
+        justify-content: space-between;
+        .footer-rights {
+            opacity: 0.3;
+            .rights-logo {
+                font-size: 12px;
+                padding-top: 15px;
+            }
+        }
+
+        .logo-footer-wrapp{
+            padding-bottom: 30px;
+        }
         padding-bottom: 50px;
+        b {
+            font-size: 16px;
+        }
         ul {
             display: flex;
             flex-direction: column;
@@ -505,12 +523,22 @@ footer {
         }
     }
 
-    .copyright-block {
-        display: flex;
-        padding: 25px 0;
-        justify-content: center;
-        .col-md {
+    .under-footer {
+            border-top: solid 1px @--navyBlue2;
+            padding: 25px 0;
+        .copyright-block {
+            display: flex;
+            justify-content: center;
             padding: 0;
+            font-size: 12px;
+            ul {
+                display: flex;
+                li{
+                    padding-right: 65px;
+                }
+            }
         }
     }
+
+
 }
