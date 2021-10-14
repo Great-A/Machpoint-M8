@@ -295,18 +295,15 @@ body #content {
   font-weight: bold;
 }
 #section-1 .tzone-converter-wrapper .tzone-converter .tzone-block {
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 15px;
 }
-#section-1 .tzone-converter-wrapper .tzone-converter .tzone-block .form-day {
-  width: 31%;
-}
 #section-1 .tzone-converter-wrapper .tzone-converter .tzone-block .form-time {
-  width: 40%;
-  margin-left: 4px;
+  margin-left: 5px;
 }
 #section-1 .tzone-converter-wrapper .tzone-converter .tzone-block .form-tperiod {
-  width: 23%;
-  margin-left: 4px;
+  margin-left: 5px;
 }
 #section-1 .tzone-converter-wrapper .tzone-converter .form-utc {
   width: 100%;
