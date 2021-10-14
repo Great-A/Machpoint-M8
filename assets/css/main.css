@@ -101,6 +101,16 @@ body #content {
   color: #234B91;
   padding: 18px 21px;
 }
+.btn-grey {
+  background-color: #B0B0AE;
+  padding: 15px 19px;
+  text-align: center;
+}
+.btn-blue {
+  background-color: #3D7FF1;
+  padding: 15px 19px;
+  text-align: center;
+}
 .header-container {
   position: fixed;
   backdrop-filter: blur(10px);
@@ -148,9 +158,11 @@ body #content {
 .header-container .header-wrapper .toggle {
   display: none;
   background: none;
+  position: absolute;
+  right: 5px;
+  top: 30px;
   line-height: 45px;
   padding: 0 15px 0px 15px;
-  color: #808080;
   border: 0;
   font-size: 2.4em;
   font-weight: bold;
@@ -163,8 +175,10 @@ body #content {
 .header-container .header-wrapper .cross {
   display: none;
   background: none;
+  position: absolute;
+  right: 5px;
+  top: 30px;
   padding: 0 15px 0px 15px;
-  color: #808080;
   border: 0;
   font-size: 4em;
   line-height: 65px;
@@ -256,16 +270,75 @@ body #content {
 #section-1 .tzone-info-wrapper p {
   padding-bottom: 60px;
 }
-#section-1 .tzone-converter {
+#section-1 .tzone-converter-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 180px;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter {
   filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.15));
   border-radius: 20px;
   background-color: #FFFFFF;
   z-index: 2;
   max-width: 330px;
-  padding: 20px;
+  padding: 25px;
+  pointer-events: none;
 }
-#section-1 .tzone-converter h5 {
+#section-1 .tzone-converter-wrapper .tzone-converter select {
+  border-radius: 10px;
+  border-color: #B0B0AE;
+  padding: 5px ;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter h5 {
   text-align: center;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-block {
+  padding-bottom: 15px;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-block .form-day {
+  width: 31%;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-block .form-time {
+  width: 40%;
+  margin-left: 4px;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-block .form-tperiod {
+  width: 23%;
+  margin-left: 4px;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .form-utc {
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-cities {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-top: solid 1px #B0B0AE;
+  padding: 10px;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-cities .utc-time,
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-cities .date {
+  font-size: 14px;
+  color: #B0B0AE;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-cities .city,
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-cities .time {
+  font-size: 22px;
+  font-weight: bold;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .tzone-cities + .tzone-cities {
+  border-bottom: solid 1px #B0B0AE;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .button-wrapper {
+  width: 100%;
+  padding-top: 20px;
+}
+#section-1 .tzone-converter-wrapper .tzone-converter .button-wrapper .button {
+  width: 100%;
 }
 #section-2 {
   padding-bottom: 120px;

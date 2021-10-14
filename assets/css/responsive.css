@@ -54,6 +54,9 @@
   .h2-modified {
     font-size: 50px;
   }
+  .header-container {
+    padding: 5px 0;
+  }
   .header-container .header-wrapper {
     flex-direction: column;
   }
@@ -66,6 +69,7 @@
   }
   .header-container .header-wrapper .header-menu {
     flex-direction: column;
+    padding-bottom: 25px;
   }
   .header-container .header-wrapper .header-menu .menu-header-menu {
     flex-direction: column;
@@ -73,17 +77,55 @@
   .header-container .header-wrapper .header-menu .menu-header-menu .menu-item {
     padding: 10px 0;
   }
+  .top-banner-wrapper {
+    padding: 60px 0;
+  }
   .top-banner-wrapper .title-container {
     padding-bottom: 60px;
   }
+  .top-banner-wrapper .title-container .h1-banner {
+    font-size: 55px;
+    line-height: 60px;
+    padding-bottom: 40px;
+  }
   .top-banner-wrapper .col-md {
     padding: 20px;
+    text-align: center;
+  }
+  .top-banner-wrapper .col-md img {
+    margin: auto;
+  }
+  .h2-modified {
+    line-height: 50px;
+    padding-bottom: 20px;
+  }
+  br {
+    display: none;
+  }
+  #section-1 .sec1-info-wrapper {
+    padding-bottom: 0;
+  }
+  #section-1 .sec1-info-wrapper .wrapper1 {
+    padding: 0 ;
+  }
+  #section-1 .tzone {
+    flex-direction: column-reverse;
+  }
+  #section-1 .tzone .tzone-converter-wrapper {
+    padding-bottom: 50px;
   }
   #section-1 .tzone-info-wrapper {
     padding: 40px 15px;
+    justify-content: center;
   }
   #section-1 .tzone-info-wrapper:before {
     display: none;
+  }
+  #section-1 .tzone-converter-wrapper {
+    padding-top: 50px;
+    margin-left: 20px;
+    justify-content: center;
+    margin: auto;
   }
   #section-2 {
     padding-bottom: 50px;
@@ -97,7 +139,6 @@
     padding: 223px 0 42px 59px;
     margin-bottom: 20px;
     background-position: center;
-    justify-content: center;
   }
   #section-3 {
     padding-bottom: 50px;
@@ -126,9 +167,17 @@
     align-items: center;
     padding: 40px 0;
   }
+  #section-3 .how-work-1 .how-work-item,
+  #section-3 .how-work-3 .how-work-item {
+    padding: 0 15px;
+  }
   #section-3 .how-work-2 .how-work-item,
   #section-3 .how-work-4 .how-work-item {
     padding: 0 15px;
+  }
+  #section-3 .how-work-2 .how-work-item p,
+  #section-3 .how-work-4 .how-work-item p {
+    padding: 0;
   }
   #section-3 .how-work-2 .how-work-item .text-hw,
   #section-3 .how-work-4 .how-work-item .text-hw {
@@ -149,6 +198,9 @@
   #section-4 .be-part-row .be-part-col .title-button-block {
     flex-direction: column;
     padding-bottom: 20px;
+  }
+  #section-4 .be-part-row .be-part-col .title-button-block h3 {
+    line-height: 60px;
   }
   footer {
     padding-top: 50px;
